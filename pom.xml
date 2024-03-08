@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.taylor.starter</groupId>
+    <artifactId>spring-boot-custom-starter</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-boot-custom-starter</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>student-library</module>
+        <module>student-spring-boot-autoconfigure</module>
+        <module>student-spring-boot-starter</module>
+        <module>student-starter-test-sample</module>
+    </modules>
+</project>

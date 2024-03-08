@@ -1,0 +1,6 @@
+taylor:
+  student:
+    name: Tommy Ma
+    sex: true
+    age: 45
+    score: 88

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.taylor.starter</groupId>
+		<artifactId>spring-boot-custom-starter</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.taylor.starter</groupId>
+	<artifactId>student-spring-boot-starter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>student-spring-boot-starter</name>
+	<description>The starter project for custom Spring Boot starter</description>
+	<properties>
+		<java.version>17</java.version>
+		<spring-boot.version>3.2.3</spring-boot.version>
+		<student-starter.version>0.0.1-SNAPSHOT</student-starter.version>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		<maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<version>${spring-boot.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.taylor.starter</groupId>
+			<artifactId>student-library</artifactId>
+			<version>${student-starter.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.taylor.starter</groupId>
+			<artifactId>student-spring-boot-autoconfigure</artifactId>
+			<version>${student-starter.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
